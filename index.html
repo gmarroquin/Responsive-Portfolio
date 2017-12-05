@@ -1,69 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>About Me</title>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+
+	<!--Fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+
+	<!--Bootstrap-->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!--Bootstrap JS-->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--Triangify -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+
 </head>
-<body>
-
 	<!-- Style Sheets -->
-	<link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css"/> 
+<!-- 	<link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css"/>  -->
 	<link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
+<!-- 	<link rel = "stylesheet" type = "text/css" href = "assets/css/contact.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "assets/css/portfolio.css"/> -->
 
-	<!-- menu-->
-	<div class="header">
-		<div id="barMenu">
+
+<body>
+	<div class="container-fluid">
+
+		<!-- Intro Div -->
+		<div class="introName">
 			<ul>
-				<li><a class="Options" href="contact.html">Contact</a></li>
-				<li><a class="Options" href="portfolio.html">Portfolio</a></li>
-				<li><a class="Options" href="index.html">About</a></li>
-				<li id="name"> Gary Marroquin</li>
+				<li><a class="Options" href="index.html">Gary Marroquin</a></li>
 			</ul>
 		</div>
+
+
+<!--Triangify background -->
+<script>
+    var pattern = Trianglify({
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+    document.body.appendChild(pattern.canvas())
+</script> 
+
 	</div>
-
-	<!-- Main Section Content -->
-	<div class="aboutMeSection">
-
-		<div class="headerAbout">
-			<h2> About Me </h2>
-			<hr id="hr1">
-		</div>
-
-		<!-- Profile Picture -->
-		<div>
-			<img class= "profile_picture" src="assets/images/Profile_Image.JPG" alt="Profile Picture">
-		</div>
-
-		<!-- Content Summary -->
-		<div class="summaryBlurb">
-			<p>
-				"It's not time to worry yet" might be the most fitting quote to describe my personality. Also, coming from a country where "Worry Dolls" are a thing (Guatemala) - I strongly feel that finding solutions is a better way to spend my time and energy rather than worrying and panicking. 
-				<br><br>
-				I'm a responsible, self-motivated and critical thinking professional with 6+ years experience dealing with end users in the technology field. My experience ranges from sales, manufacturing, logistics, international travel, audits and application support. 
-				<br><br>
-				I am currently in the process acquiring the skillset of a Full Stack Developer.
-				<br><br>
-				Networking is a passion so please feel free to reach out if you have any questions or if you are interested in hearing about my travels (I've been to 12 countries in the past 4 years).
-			</p>
-		</div>
-	</div>
-
-	<div class="sideBar">
-		<div class="profileAboutme">
-			<h2> Connect With Me </h2>
-			<hr id="hr2">
-		</div>
-		<div class="iconDiv">
-			<img class= "LinkedIn" src="assets/images/LinkedIn.png" alt="LinkedIn">
-			<img class= "StackOverflow" src="assets/images/StackOverflow.png" alt="StackOverflow">
-			<img class= "GitHub" src="assets/images/GitHub.png" alt="GitHub">
-		</div>
-	</div>
-
-	<!-- footer -->
-	<div class="Indexfooter">© Copyright 2017 Gary Marroquin</div>
-
 </body>
+
+
 </html>
