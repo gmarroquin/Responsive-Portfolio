@@ -1,0 +1,325 @@
+body {
+	background-image: url(../images/IMG_0983.jpg);
+	min-height: 500px;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+/* Whole Page header DIV */
+.header {
+	width: 100%;
+	border-bottom: 2px white;
+	border-style: solid none;
+}
+
+/* menu section*/
+.menu {
+	width: 960px;
+	margin: auto;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+	right: 300px;
+}
+
+#name {
+	float: left;
+	display: block;
+	color: white;
+	text-align: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 30px;
+	position: relative;
+	left: 400px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+
+li {
+	float: right;
+
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+li a:hover:not(.active) {
+	background-color: #D6665A;
+}
+
+/* Contact me Div section */
+.portfolioMeSection {
+	height: 800px;
+	width: 650px;
+	border: solid;
+	background-color: rgba(0,0,0,0.5);
+	border-color: white;
+	border-width: thin;
+	position: relative;	
+	left: 100px;
+	top: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin-bottom: 150px;
+	overflow: auto;
+}
+
+/* ContactmeHeader */ 
+.portfolioHeader {	
+	float: left;
+	color: white;
+	font-weight: thin;
+	top: 0px;
+	width: 608px;
+	height: 53px;
+	font-size: 30px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	text-align: left;
+	margin-left: 20px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	z-index: -1;
+}
+
+/*horizontal line */
+#hr1 {
+	width: 600px;
+	position: absolute;
+	left: 15px;
+	right: 20px;
+}
+
+/* Project Image Hover */
+a.layerOne:hover, a.layerOne:active {background: #D6665A}
+a.layerTwo:hover, a.layerTwo:active {background: #D6665A}
+a.layerThree:hover, a.layerThree:active {background: #D6665A}
+a.layerFour:hover, a.layerFour:active {background: #D6665A}
+a.layerFive:hover, a.layerFive:active {background: #D6665A}
+
+/* Text Overlay */
+.layerOne{
+	position:absolute; 
+	top: 240px;
+	left:25px;
+	width:295px;
+	height:50px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 1px;
+	z-index: 1;
+	padding-top: 25px;
+}
+
+
+.layerTwo{
+	position:absolute; 
+	top: 240px;
+	left: 338px;
+	width:295px;
+	height:50px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 1px;
+	z-index: 1;
+	padding-top: 25px;
+}
+
+.layerThree{
+	position:absolute; 
+	top: 455px;
+	left: 25px;
+	width:295px;
+	height:50px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 1px;
+	z-index: 1;
+	padding-top: 25px;
+}
+
+.layerFour{
+	position:absolute; 
+	top: 455px;
+	left: 338px;
+	width:295px;
+	height:50px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 1px;
+	z-index: 1;
+	padding-top: 25px;
+}
+
+.layerFive{
+	position:absolute; 
+	top: 670px;
+	left: 25px;
+	width:295px;
+	height:50px;
+	text-align:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 1px;
+	z-index: 1;
+	padding-top: 25px;
+}
+/*Project Placeholder Images */
+.Arch{
+	width: 295px;
+	height: 200px;
+	position: absolute;
+	top: 135px;
+	left: 25px;
+}
+
+.People{
+	width: 295px;
+	height: 200px;
+	position: absolute;
+	top: 135px;
+	right: 27px;
+}
+
+.Nature{
+	width: 295px;
+	height: 200px;
+	position: absolute;
+	top: 350px;
+	left: 25px;
+}
+
+.techOne{
+	width: 295px;
+	height: 200px;
+	position: absolute;
+	top: 350px;
+	right: 27px;
+}
+
+.techTwo{
+	width: 295px;
+	height: 200px;
+	position: absolute;
+	top: 565px;
+	left: 25px;
+}
+
+/*ContactsideBar*/
+.ContactsideBar {
+	width: 270px;
+	height: 200px;
+	background-color: rgba(0,0,0,0.5);
+	float: right;
+	position: absolute;
+	right: 320px;
+	top: 130px;
+	border: solid;
+	border-color: white;
+	border-width: thin;
+}
+
+/* sideBar Profile Header*/
+.profileAboutme {
+	float: left;
+	color: white;
+	font-weight: thin;
+	text-transform: uppercase;
+	top: 0px;
+	font-size: 25px;
+	width: 200px;
+	height: 40px;
+	padding-bottom: 30px;
+	padding-top: 45px;
+	text-align: center;
+	margin-left: 35px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.iconDiv{
+	width: 200px;
+	position: absolute;
+	left: 12px;
+}
+
+/* Social Media Icons */
+.LinkedIn {
+	position: absolute;
+	top: 100px;
+	left: 40px;
+	width: 50px;
+	height: 50px;
+}
+
+.StackOverflow {
+	position: absolute;
+	top: 100px;
+	left: 97px;
+	width: 50px;
+	height: 50px;
+}
+
+.GitHub {
+	position: absolute;
+	top: 100px;
+	left: 155px;
+	width: 50px;
+	height: 50px;
+}
+
+/* Contact footer */
+.contactfooter {
+	position: relative;
+	width: 100%;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	margin-top: 100px;
+	border-top: 2px white;
+	border-style: solid none;
+	text-align: center;
+	color: white;
+	font-size: 10px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	letter-spacing: 2px;
+}
