@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width" />
 	<title>Portfolio</title>
 
 	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
 	<!--Bootstrap-->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -21,6 +21,31 @@
 	<link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css"/> 
 	<link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
 
+	<!--No Vacancy: Used from https://github.com/chuckyglitch/novacancy.js  -->
+	<link rel="stylesheet" href="css/html5reset-1.6.1.css" type="text/css" media="screen,print">
+	<link href="css/demo.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="novacancy.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#vacancy').novacancy({
+				'reblinkProbability': 0.10,
+				'blinkMin': 0.85,
+				'blinkMax': 0.6,
+				'loopMin': 2,
+				'loopMax': 1,
+				'color': '#fff',
+				'glow': ['0 0 80px #ffffff', '0 0 30px red', '0 0 6px orange']
+			}); 
+			$('#vacancy').novacancy({
+				'blink': 1,
+				'off': 1,
+				'color': '#fff',
+				'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
+			});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -28,11 +53,14 @@
 
 		<!-- Intro Div -->
 		<div class="introName">
-			<ul>
-				<li><a class="Options" href="aboutMe.html">Gary Marroquin</a></li>
-			</ul>
+			<div class="board">
+				<ul>
+					<li><a id="vacancy" href="aboutMe.html">Gary Marroquin</a></li>
+				</ul>
+			</div>
 		</div>
 
+	</div>
 
 <!--Triangify background -->
 <script>
