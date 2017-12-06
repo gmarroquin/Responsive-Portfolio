@@ -1,36 +1,23 @@
-body {
-/*	background-image: url(../images/lastNameLogo.png);*/
+body{
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
+    text-align: center;
 }
-
 .container-fluid{
     height: 100%;
     width: 100%;
-}
-
-.introName{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 600px;
-    width: 600px;
-    background-image: url(../images/lastNameLogo.png);
+    background-image: url(../images/background.png);
     background-repeat: no-repeat;
     background-position: center; 
-    border: solid;
-    border-color: white;
+    background-size: cover;
 }
 
 .board {
     position: absolute;
     text-align: center;
     width: 100%;
-    top: 50%;
-    background-color: rgb(66, 89, 115);
+    margin-top:50%;
 }
 
 #vacancy {

@@ -1,77 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="Dev Portfolio" content="">
+    <meta name="Gary Marroquin" content="Dev Portfolio">
+
 	<title>Portfolio</title>
 
-	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-
-	<!--Bootstrap-->
+	<!--Bootstrap CSS-->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-	<!-- JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-
-	<!--Triangify -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+	<!--Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
 	<!-- Style Sheets -->
-	<link rel = "stylesheet" type = "text/css" href = "assets/css/reset.css"/> 
 	<link rel = "stylesheet" type = "text/css" href = "assets/css/style.css"/>
-
-	<!--No Vacancy: Used from https://github.com/chuckyglitch/novacancy.js  -->
-	<script type="text/javascript" src="javascript/novacancy.js"></script>
 </head>
 
 <body>
-	<div class="container-fluid">
-		<!-- Intro Div -->
-		<div class="introName">
-			<div class="board">
-				<ul>
-					<li><a id="vacancy" href="aboutMe.html">Gary Marroquin</a></li>
-				</ul>
+	<section>
+		<div class="container-fluid">
+			<!-- Intro Div -->
+			<div class="row">
+				<div class="col-sm-12 col-med-12 col-lg-12 introName">
+					<div class="row board">
+						<ul class="list-inline">
+							<li><a id="vacancy" href="aboutMe.html">Gary Marroquin</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
+	</section>
 
-<!--Triangify background -->
-<script>
-    var pattern = Trianglify({
-        width: window.innerWidth,
-        height: window.innerHeight
-    });
-    document.body.appendChild(pattern.canvas())
-</script> 
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-	</div>
-</body>
-	<!-- Neon Letters -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#vacancy').novacancy({
-				'reblinkProbability': 0.10,
-				'blinkMin': 0.85,
-				'blinkMax': 0.6,
-				'loopMin': 2,
-				'loopMax': 1,
-				'color': '#fff',
-				'glow': ['0 0 80px #ffffff', '0 0 30px red', '0 0 6px DarkRed']
-			}); 
-			$('#vacancy').novacancy({
-				'blink': 1,
-				'off': 1,
-				'color': '#fff',
-				'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
-			});
+<!-- JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!--No Vacancy: Used from https://github.com/chuckyglitch/novacancy.js  -->
+<script type="text/javascript" src="javascript/novacancy.js"></script>
+
+<!-- Neon Letters -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('#vacancy').novacancy({
+			'reblinkProbability': 0.10,
+			'blinkMin': 0.85,
+			'blinkMax': 0.6,
+			'loopMin': 2,
+			'loopMax': 1,
+			'color': '#fff',
+			'glow': ['0 0 80px #ffffff', '0 0 30px red', '0 0 6px DarkRed']
+		}); 
+		$('#vacancy').novacancy({
+			'blink': 1,
+			'off': 1,
+			'color': '#fff',
+			'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
 		});
-	</script>
+	});
+</script>
 
-
+</body>
 
 </html>
