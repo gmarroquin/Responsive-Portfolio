@@ -5,7 +5,6 @@ body {
 }
 
 .introName{
-    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -22,7 +21,7 @@ body {
 .board {
     position: absolute;
     text-align: center;
-    width: 600px;
+    width: 100%;
     top: 50%;
     background-color: rgb(66, 89, 115);
 }
